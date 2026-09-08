@@ -1,20 +1,18 @@
 # Afbeeldingen (assets)
 
-Deze map moet de afbeeldingen van de website bevatten. De HTML-pagina's verwijzen naar
-**exact** onderstaande bestandsnamen (kleine letters, geen spaties):
+Alle afbeeldingen zijn geoptimaliseerd voor het web (JPEG, max. 1600 px, ca. 180–480 KB per stuk).
+De originele uploads (PNG/JPEG, 2–3,7 MB) staan nog in de git-geschiedenis van `main`.
 
-| Bestand | Gebruikt op |
-|---|---|
-| `golden-tide-i-museum-gallery.png` | index.html (hero, collectie, in context), golden-tide-i.html |
-| `golden-tide-i-paris-apartment.png` | index.html (in context), golden-tide-i.html |
-| `golden-tide-detail-03.jpeg` | index.html (sectie "The work") |
-| `golden-tide-ii-paris-apartment.png` | index.html (collectie, in context), golden-tide-ii.html |
-| `golden-tide-ii-museum-installation.png` | index.html (in context), golden-tide-ii.html |
-| `golden-tide-ii-design.png` | golden-tide-ii.html (hoofdafbeelding) |
+| Bestand | Wat | Gebruikt op |
+|---|---|---|
+| `golden-tide-i.jpg` | Het echte werk, recht van voren | index (hero, collectie), golden-tide-i |
+| `golden-tide-i-detail.jpg` | Close-up van het oppervlak | index ("The work"), golden-tide-i |
+| `golden-tide-i-wall-01.jpg`, `golden-tide-i-wall-02.jpg` | Foto's aan de muur | golden-tide-i (galerij) |
+| `golden-tide-i-museum-gallery.jpg`, `golden-tide-i-paris-apartment.jpg` | Visualisaties | index (in context), golden-tide-i |
+| `golden-tide-ii-design.jpg` | Ontwerp Golden Tide II | index (collectie), golden-tide-ii |
+| `golden-tide-ii-museum-installation.jpg`, `golden-tide-ii-paris-apartment.jpg` | Visualisaties | index (in context), golden-tide-ii |
+| `og-image.jpg` | 1200×630 voorvertoning voor WhatsApp/LinkedIn/Facebook | alle pagina's (meta) |
 
-Tips:
-
-- Houd de bestanden onder ca. 500 KB per stuk (breedte 1600–2000 px is ruim voldoende).
-  Grote PNG's kun je verkleinen met bijvoorbeeld https://squoosh.app.
-- Zolang een afbeelding ontbreekt, toont de site automatisch een gekleurde placeholder
-  in plaats van een "kapot plaatje"-icoon.
+Nieuwe afbeelding toevoegen? Verklein naar max. 1600 px en sla op als JPEG (kwaliteit ~80),
+bijvoorbeeld via https://squoosh.app. De telefoonschermafbeelding (`golden-tide-detail-01.jpeg`)
+is bewust niet opgenomen.

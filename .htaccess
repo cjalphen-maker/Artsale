@@ -8,10 +8,15 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Altijd HTTPS (werkt ook achter de TransIP-proxy, zonder redirect-loop).
+  # 1. artpiece.nl (zonder www) -> https://www.artpiece.nl
+  RewriteCond %{HTTP_HOST} ^artpiece\.nl$ [NC]
+  RewriteRule ^ https://www.artpiece.nl%{REQUEST_URI} [L,R=301]
+
+  # 2. http -> https (werkt ook achter de TransIP-proxy, zonder redirect-loop)
+  RewriteCond %{HTTP_HOST} ^www\.artpiece\.nl$ [NC]
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteRule ^ https://www.artpiece.nl%{REQUEST_URI} [L,R=301]
 
   # Nette URL's: /golden-tide-i werkt ook zonder .html
   RewriteCond %{REQUEST_FILENAME} !-d
