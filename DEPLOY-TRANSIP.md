@@ -8,7 +8,7 @@ Er is geen database of PHP nodig. Het kleinste TransIP-webhostingpakket volstaat
 ## Stap 0 — Voorbereiden (op je eigen computer)
 
 1. **Afbeeldingen:** staan al geoptimaliseerd in `assets/` (zie `assets/README.md`).
-2. **E-mailadres vervangen.** Vervang `hello@artist-studio.com` door je eigen adres in:
+2. **E-mailadres.** Het contactadres is `hello@switchaion.com`; wil je het wijzigen, pas het dan aan in:
    - `index.html` (1×)
    - `golden-tide-i.html` (1×)
    - `golden-tide-ii.html` (1×)
