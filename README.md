@@ -17,8 +17,7 @@ open `index.html` in een browser om de site lokaal te bekijken.
 
 ## Voor publicatie
 
-1. Vervang `hello@artist-studio.com` in `index.html`, `golden-tide-i.html` en `golden-tide-ii.html`
-   door het gewenste contactadres.
+1. Het contactadres is `hello@switchaion.com` (in `index.html`, `golden-tide-i.html` en `golden-tide-ii.html`).
 2. Volg `DEPLOY-TRANSIP.md`. Domein: https://www.artpiece.nl
 
 De site gebruikt bewust alleen de aangeleverde Golden Tide I-beelden en beschrijft Golden Tide II–IV
