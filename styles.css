@@ -12,3 +12,5 @@
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .reveal { opacity:1; transform:none; transition:none; } }
 /* Placeholder voor afbeeldingen die (nog) ontbreken in assets/ — zie assets/README.md. */
 img.img-missing { position:relative; display:block; visibility:hidden; overflow:hidden; } img.img-missing:before,img.img-missing:after { visibility:visible; } img.img-missing:before { content:""; position:absolute; inset:0; background:radial-gradient(ellipse at 22% 20%,rgba(255,239,194,.85),transparent 25%),linear-gradient(110deg,transparent 20%,rgba(255,215,114,.65) 47%,transparent 56%),linear-gradient(145deg,#46888c 0%,#71b6b5 40%,#c79d55 41%,#d18c32 60%,#143d4c 100%); } img.img-missing:after { content:"FORME · ART"; position:absolute; left:14px; bottom:14px; color:#f4eee4; font:500 10px "DM Mono",monospace; letter-spacing:.08em; } .primary-work img.img-missing { aspect-ratio:3/4; }
+/* 404-pagina */
+.not-found { min-height:100vh; display:grid; place-content:center; text-align:center; padding:130px 24px 80px; } .not-found h1 { font-size:clamp(56px,8vw,110px); margin-bottom:24px; } .not-found p { max-width:360px; margin:0 auto 32px; }

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-zyXKHKsVZqMgm1m0WwikkjKlyvKaSCyeZMsOx2ShJng='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <!-- Redirect naar https. Let op: de CSP-hash hierboven hoort bij exact dit script; wijzig ze samen. -->
+    <script>if(location.protocol==='http:'&&/(^|\.)artpiece\.nl$/.test(location.hostname)){location.replace('https://www.artpiece.nl'+location.pathname+location.search+location.hash);}</script>
     <meta name="description" content="Golden Tide II by FORME ART." />
     <title>Golden Tide II — FORME ART</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />

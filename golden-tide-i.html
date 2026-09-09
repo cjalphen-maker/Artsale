@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-zyXKHKsVZqMgm1m0WwikkjKlyvKaSCyeZMsOx2ShJng='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <!-- Redirect naar https. Let op: de CSP-hash hierboven hoort bij exact dit script; wijzig ze samen. -->
+    <script>if(location.protocol==='http:'&&/(^|\.)artpiece\.nl$/.test(location.hostname)){location.replace('https://www.artpiece.nl'+location.pathname+location.search+location.hash);}</script>
     <meta name="description" content="Golden Tide I by FORME ART." />
     <title>Golden Tide I — FORME ART</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +51,7 @@
       <section class="acquisition-panel">
         <div><p class="section-label">Acquisition</p><h2>Golden Tide I</h2></div>
         <dl><div><dt>Status</dt><dd>Available</dd></div><div><dt>Price</dt><dd>€10,000</dd></div><div><dt>Details</dt><dd>Upon request</dd></div></dl>
-        <a class="button" href="mailto:hello@artist-studio.com?subject=Golden%20Tide%20I%20Inquiry">Request details <span>↗</span></a>
+        <a class="button" href="mailto:hello@artist-studio.com?subject=Golden%20Tide%20I%20Inquiry&body=Hello%20FORME%20ART%2C%0A%0AI%20would%20like%20to%20receive%20more%20details%20about%20Golden%20Tide%20I%20%28availability%2C%20dimensions%2C%20viewing%29.%0A%0AName%3A%0APhone%3A%0A">Request details <span>↗</span></a>
       </section>
       <p class="page-disclaimer">Interior and gallery scenes are visualizations for presentation purposes; they do not represent past installations or exhibitions.</p>
     </main>
